@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Methods</title>
+</head>
+<body>
+
+<h3>Answers:</h3>
+<p id="output"></p>
+
+<script>
+let items = ["eraser", "pencil", "bag", "pen"];
+
+items.push("scale");
+
+items.pop(); 
+
+let upperItems = items.map(item => item.toUpperCase());
+
+let filteredItems = items.filter(item => item.length > 5);
+
+document.getElementById("output").innerHTML =
+    "<b>Original Items:</b> " + items.join(", ") + "<br><br>" +
+    "<b>Uppercase (map):</b> " + upperItems.join(", ") + "<br><br>" +
+    "<b>Filtered (length > 4):</b> " + filteredItems.join(", ");
+</script>
+
+</body>
+</html>
