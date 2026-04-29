@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Style</title>
+</head>
+<body>
+
+<h1 id="myText">Hello World</h1>
+
+<button onclick="changeStyle()">Click Me</button>
+
+<script>
+function changeStyle() {
+    let element = document.getElementById("myText");
+    
+    element.style.color = "pink";
+    element.style.fontSize = "40px";
+    element.style.backgroundColor = "yellow";
+}
+console.log("style changed successfully");
+</script>
+
+</body>
+</html>
